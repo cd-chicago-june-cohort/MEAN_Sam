@@ -1,0 +1,13 @@
+<h1>Notes</h1>
+
+<form #formData='ngForm' (submit)='createNote()'>
+  <input type='text' name='note'
+  required
+  minlength='4'
+  [(ngModel)] = 'note.content'
+  #content='ngModel'
+  >
+  <button type='submit' [disabled]='!formData.valid'>Post Note</button>
+</form>
+
+<app-notes [notes]='notes'></app-notes>
