@@ -1,0 +1,7 @@
+<div class='title'>Player Status - Game {{num}}</div>
+<div class='game-nav-bar'>
+  <div (click)="changeNum(1)" class='game-link'>Game 1</div><span>|</span>
+  <div (click)="changeNum(2)" class='game-link'>Game 2</div><span>|</span>
+  <div (click)="changeNum(3)" class='game-link'>Game 3</div>
+</div>
+<div class='game-container'><app-games [num]='num'></app-games></div>

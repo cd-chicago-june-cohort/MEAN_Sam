@@ -1,0 +1,4 @@
+<a [routerLink]="['list']" (click)="bolden('link1')" class='header-link' [ngClass]="{'bold': bool1}">List</a>
+<span> | </span>
+<a [routerLink]="['form']" (click)="bolden('link2')" [ngClass]="{'bold': bool2}" class='header-link'>Add Player</a>
+<div class='comp-container'><router-outlet></router-outlet></div>

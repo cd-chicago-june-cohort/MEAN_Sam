@@ -1,0 +1,4 @@
+<div class='container'>
+  <a [routerLink]="['manage']" (click)="bolden('link1')" class='header-link' [ngClass]="{'bold': bool1}">Manage Players</a><span> | </span><a [routerLink]="['status']" (click)="bolden('link2')" [ngClass]="{'bold': bool2}" class='header-link'>Manage Player Status</a>
+  <div class='comp-container'><router-outlet></router-outlet></div>
+</div>

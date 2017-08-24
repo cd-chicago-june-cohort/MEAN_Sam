@@ -1,0 +1,16 @@
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Player Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let player of players; let i = index'>
+        <td>{{player.name}}</td>
+        <td *ngIf="num == 1"><button (click)="play(i)" [ngClass]="{'green': (player.game1=='Playing')}">Playing</button><button (click)="bench(i)"  [ngClass]="{'red': (player.game1=='Benched')}">Benched</button><button (click)="undecide(i)" [ngClass]="{'yellow': (player.game1=='Undecided')}">Undecided</button></td>
+        <td *ngIf="num == 2"><button (click)="play(i)" [ngClass]="{'green': (player.game2=='Playing')}">Playing</button><button (click)="bench(i)" [ngClass]="{'red': (player.game2=='Benched')}">Benched</button><button (click)="undecide(i)" [ngClass]="{'yellow': (player.game2=='Undecided')}">Undecided</button></td>
+        <td *ngIf="num == 3"><button (click)="play(i)" [ngClass]="{'green': (player.game3=='Playing')}">Playing</button><button (click)="bench(i)" [ngClass]="{'red': (player.game3=='Benched')}">Benched</button><button (click)="undecide(i)" [ngClass]="{'yellow': (player.game3=='Undecided')}">Undecided</button></td>
+    </tr>
+  </tbody>
+</table>

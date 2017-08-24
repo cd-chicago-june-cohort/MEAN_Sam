@@ -1,0 +1,23 @@
+.header-link{
+    font-size: 30px;
+    color: rgb(4,75,139);
+}
+
+span{
+    font-size: 35px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.comp-container{
+    width: 845px;
+    height: 360px;
+    border: 2px solid black;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}

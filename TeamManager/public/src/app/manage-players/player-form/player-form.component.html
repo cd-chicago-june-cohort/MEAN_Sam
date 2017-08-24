@@ -1,0 +1,8 @@
+<h1>Add Player</h1>
+<form #formData='ngForm' (submit)='createPlayer()'>
+  <label for='name'>Player Name: </label>
+  <input type='text' name='name' required minlength='4' [(ngModel)]='player.name' #name='ngModel'>
+  <label for='name'>Preferred Position: </label>
+  <input type='text' name='position' [(ngModel)]='player.position' #position='ngModel'>
+  <button type='submit' [disabled]='!formData.valid'>Add</button>
+</form>
